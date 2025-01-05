@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IBS Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- header and banner section  -->
+  <section class="flex flex-col w-full h-screen">
+    <header class=" flex items-center justify-between p-4 h-20 text-white shadow-bottom shadow-lg">
+      <img src="logo-ibs@2x.png" class="h-12 ml-16" alt="Company Logo" />
+      <div class="flex flex-row gap-16 align-middle justify-center items-center pr-16">
+        <div id="whatsappShow"  
+          class="text-l flex flex-row items-center justify-center gap-2 text-red-600 bg-red-200 rounded-full h-12 w-64 border-2 border-red-700 sm:flex hidden  hover:bg-red-400  hover:shadow-md hover:text-white hover:border-black ">
+          <img src="whatsapp.png" class="h-8" /> Chat to our expert
+        </div>
+        <img src="mail@2x.png" class="h-6" />
+        <img src="telephone@2x.png" class="h-7" />
+      </div>
+    </header>
+
+    <!--  Background img  -->
+    <div id="responseDiv"
+      class="relative flex flex-row justify-between bg-cover bg-center h-screen  bg-[url('MaskGroup1@2x.png')] sm:bg-[url('Group401@2x.png')]  ">
+      <!-- left text -->
+      <div class="w-1/2 flex flex-col justify-center items-start text-white px-8 py-8">
+        <div class="max-w-lg">
+          <p class="mb-4 text-7xl font-medium">
+            CFO <span class="text-red-500">Services</span>
+          </p>
+          <div class="flex flex-row gap-2">
+            <div class="w-24 h-2 rounded-lg bg-white text-white"></div>
+            <div class="w-6 h-2 rounded-lg bg-white text-white"></div>
+          </div>
+
+          <p class="text-md opacity-50 mt-4">
+            We help you focus on what matters!
+          <p class="text-md opacity-50 mt-2">Outsource your financial
+            management to us and build on your core-competencies. Our premier
+            CFO services help accelerate your growth!</p>
+          </p>
+        </div>
+      </div>
+
+      <!-- right side form  -->
+      <div class="flex flex-row justify-center items-center p-0" id="FormTag">
+        <form action="" class="w-full max-w-sm bg-white p-6 rounded-3xl shadow-lg m-0">
+          <p class="text-center text-4xl text-blue-900 font-semibold mb-4">
+            Schedule your free consultation
+          </p>
+          <input type="text" placeholder=" Name" class="w-full mb-4 p-3 border border-gray-300 rounded" />
+          <input type="email" placeholder="Official Email" class="w-full mb-4 p-3 border border-gray-300 rounded" />
+          <input type="text" placeholder="phone" class="w-full mb-4 p-3 border border-gray-300 rounded" />
+          <input type="text" placeholder="Company Name" class="w-full mb-4 p-3 border border-gray-300 rounded" />
+          <select id="selectTag" name="fruit" class="w-full mb-4 p-3 border border-gray-300 rounded">
+            <option value="apple">purpose of inquiry</option>
+            <option value="For Job purpose">For Job purpose</option>
+            <option value="Business purpose">Business purpose</option>
+            <option value="To get more information">Orange</option>
+          </select>
+          <button type="submit" class="w-full p-3 bg-red-500 text-white rounded hover:bg-red-400 hover:border-2 hover:border-red-500 ">
+            Submit
+          </button>
+        </form>
+        <!-- whatsapp get started -->
+        <div class="flex flex-col justify-end items-center align-middle gap-16 mt-48 " id="whatsappGetStarted">
+          <img src="whatsapp@2x.png" class=" w-12">
+          <p class="bg-red-500 p-1 text-white w-36 rounded-xl h-8 m-0" style="transform: matrix(0, -1, 1, 0, 0, 0)">
+            Get started now
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class=" flex w-full  sm:hidden  ">
+      <div class=" flex justify-center items-center text-white bg-red-500  w-full ">Get started now</div>
+      <div class="flex justify-center items-center bg-black w-full"> <img src="whatsapp@2x.png" class="w-12"></div>
+    </div>
+  </section>
+
+  <!-- our services section -->
+  <section id="servicesection" class="flex flex-row w-full h-screen mt-8 align-center">
+  <div class="flex flex-col mt-6 sm:mt-0 w-full">
+    <!-- Title Section -->
+    <div class="flex flex-row gap-2 text-center justify-center items-center text-xl mb-8">
+      <div class="w-24 h-2 rounded-lg bg-red-500"></div>
+      <div class="w-6 h-2 rounded-lg bg-blue-500"></div>
+      <span class="text-blue-500">Our Services</span>
+    </div>
+
+    <p class="flex justify-center text-grey-900 font-semibold text-xl  mt-0 ">To help you guide to the right direction</p>
+    <!-- Flex Section -->
+    <div class="flex justify-between">
+      <!-- Left Image -->
+      <div class="flex float-start w-fit ml-0">
+        <img src="Intersection 2@2x.png" class=" w-64 sm:h-56 h-28  mt-96  opacity-1">
+      </div>
+
+            <!-- Flex Boxes -->
+      <div class="flex flex-col p-6 pt-0 mt-2">
+        <!-- Boxes Section -->
+        <div class="flex flex-wrap justify-center pt-0 pb-0 sm:p-24 sm:pt-0 sm:pb-0">
+          <!-- First Box -->
+          <div class="flex flex-col p-4 gap-4 border-2 h-78 sm:h-72 w-1/2 sm:w-1/3">
+            <div><img src="Group 383@2x.png" class="h-12 sm:h-20"></div>
+            <p class="text-xl">Accounting</p>
+            <p class="opacity-50 text-balance">We help reduce cost of routine, clerical accounting processes and improve efficiency of the operations.</p>
+          </div>
+
+          <!-- Second Box -->
+          <div class="flex flex-col p-4 gap-4 border-2 h-78 sm:h-72 w-1/2 sm:w-1/3">
+            <div><img src="Group 387@2x.png" class="h-12 sm:h-20"></div>
+            <p class="text-xl">Taxation</p>
+            <p class="opacity-50">Besides GST, TDS - our tax professionals provide deep industry expertise on various client specific taxation challenges</p>
+          </div>
+
+          <!-- Third Box -->
+          <div class="flex flex-col p-4 gap-4 border-2 h-78 sm:h-72 w-1/2 sm:w-1/3">
+            <div><img src="Group 390@2x.png" class="h-12 sm:h-20"></div>
+            <p class="text-xl">Compliances</p>
+            <p class="opacity-50">With the ever evolving regulatory framework, we act as your extended team to help ensure a zero defect compliance</p>
+          </div>
+
+          <!-- Fourth Box -->
+          <div class="flex flex-col p-4 gap-4 border-2 h-78 sm:h-72 w-1/2 sm:w-1/3">
+            <div><img src="Group 394@2x.png" class="h-12 sm:h-20"></div>
+            <p class="text-xl">Budgeting & Controlling</p>
+            <p class="opacity-50">We help create a comprehensive budget for our clients that takes into account all their expense and revenue streams and also help identify cost cutting areas to optimize spending and maximize profitability.</p>
+          </div>
+
+          <!-- Fifth Box -->
+          <div class="flex flex-col p-4 gap-4 border-2 h-78 sm:h-72 w-1/2 sm:w-1/3">
+            <div><img src="Group 398@2x.png" class=" h-12 sm:h-20"></div>
+            <p class="text-xl">Working Capital Management</p>
+            <p class="opacity-50">As intrinsic part of our services, we work to ensure sound working capital management for our clients.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Right Image -->
+      <div class="float-end  mr-0">
+        <img src="Intersection 1@2x.png" class="  w-64 h-28 sm:h-56  opacity-1">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- our experience section -->
+<section class=" h-screen sm:h-full  mt-64 sm:mt-0 ">
+  <div id="custom-bg" class=" flex justify-center items-center relative bg-cover bg-center h-screen">
+    <!-- Main container -->
+    <div class="flex flex-col sm:flex-row justify-around  p-6 lg:p-10 gap-5 items-center sm:items-start">
+      
+      <!-- Left side -->
+      <div class="flex items-center w-96 relative pr-0 sm:ml-64 p-0">
+        <!-- Floating box -->
+        <div class="absolute z-10 -left-31 sm:-left-40 top-1/2 transform -translate-y-1/2 sm:mt-64 mt-52">
+          <div class="flex flex-col justify-center items-center w-52   h-52 sm:w-64 sm:h-56  p-4 gap-4 border-2 bg-white shadow-lg">
+            <img src="Group 398@2x.png" alt="Icon" class="h-8 sm:h-12 lg:h-20">
+            <p class="text-md font-semibold">Lorem ipsum</p>
+            <p class=" text-sm opacity-70 text-center">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            </p>
+          </div>
+        </div>
+        <!-- Background image -->
+        <img src="portrait-handsome-smiling-serious-indian-man@2x.png" alt="Portrait" class="absolute inset-0 z-0 sm:h-96 h-72 w-full ">
+      </div>
+
+      <!-- Right side -->
+      <div class="mt-96 sm:mt-0 w-full lg:w-1/2 flex flex-col justify-center items-center sm:items-start gap-6">
+        <!-- Title Section -->
+        <div class="flex flex-row gap-2 items-center text-xl">
+          <div class="w-12 h-2 rounded-lg bg-red-500"></div>
+          <div class="w-4 h-2 rounded-lg bg-blue-500"></div>
+          <span class="text-blue-500 font-semibold">Our Services</span>
+        </div>
+        <!-- Headline -->
+        <p class="text-2xl lg:text-3xl font-bold leading-snug">
+          We have provided more <br> than 10+ years
+        </p>
+        <!-- Description -->
+        <p class="text-base leading-relaxed opacity-60">
+          With 20+ years of experience and over 100 clients, our organization has deep insight and expertise in managing 
+          the financial requirements and challenges of clients across industries. Our aim is to help them focus on their core expertise 
+          and thereby become efficient value creators in the business sector. No matter the organizational changes or team movements, 
+          we ensure that processes and systems work with uninterrupted flow and precision. Our offerings, backed by a team with years 
+          of expertise, are well-positioned to fill in the gap of CFOs.
+        </p>
+        <p class=" flex justify-start items-center gap-3 text-blue-600 font-semibold text-xl"><img src="Group 406.svg" alt="" class=" rotate-90"> How we work</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- featured in and Testimonial section  -->
+<section id="featureSection" class="">
+  <!-- Container -->
+  <div class=" sm:p-5 flex flex-col gap-8">
+    <!-- Featured In -->
+    <div class="flex flex-col justify-center items-center  gap-8">
+      <div class="flex flex-row gap-2 items-center w-full justify-center text-xl">
+        <div class="w-12 h-2 rounded-lg bg-red-500"></div>
+        <div class="w-4 h-2 rounded-lg bg-blue-500"></div>
+        <span class="text-blue-500 font-semibold">Featured In</span>
+      </div>
+      <p class="sm:text-2xl font-semibold">Our latest work</p>
+      <div class="hidden sm:flex justify-center">
+        <img src="Group 29@2x.png" alt="" class="w-3/4">
+      </div>
+      <div class="container sm:hidden">
+        <img src="arrow-back-regular-24.png" class="arrow left">
+        <div class="frame overflow-hidden w-full">
+          <div class="slider flex transition-transform duration-500 ease-in-out">
+            <img src="download@2x.png" alt="" class="w-full">
+            <img src="inc42_owler_20170316_092904_original@2x.png" alt="" class="w-full">
+            <img src="logo@2x.png" alt="" class="w-full">
+            <img src="moneycontrol-logo-vector@2x.png" alt="" class="w-full">
+            <img src="Forbes_logo.svg@2x.png" alt="" class="w-full">
+          </div>
+        </div>
+        <img src="arrow-back-regular-24.png" class="arrow right">
+      </div>
+    </div>
+    <!-- Testimonial -->
+    <div class="flex flex-col items-center justify-center gap-3">
+      <div class="flex flex-row gap-2 items-center w-full justify-center text-xl">
+        <div class="w-12 h-2 rounded-lg bg-red-500"></div>
+        <div class="w-4 h-2 rounded-lg bg-blue-500"></div>
+        <span class="text-blue-500 font-semibold">Testimonial</span>
+      </div>
+      <p class="sm:text-2xl font-semibold">What our clients say?</p>
+
+      <div class="container2 flex items-center justify-center gap-3 sm:pl-28 sm:pr-28  ">
+        
+        <img src="arrow-back-regular-24.png" class="arrow2 left2 w-8 h-8">
+        <div class="frame2 overflow-hidden overflow-x-scroll w-[60%] sm:w-full">
+          <div class="slider2 flex gap-4 transition-transform duration-500 ease-in-out">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg min-h-96 sm:min-w-[48%] min-w-full shadow-lg p-4">
+              <div class="flex justify-between">
+                <img src="Ellipse 45.svg" class="h-6 mt-2">
+                <img src="Ellipse 42.svg" class="h-6">
+              </div>
+              <p class="p-2">
+               111 We are very happy with our association with IBS. They have been a part of our journey right from our earlier nascent stages as a young IT start up. Besides streamlining our processes, they helped us immensely with negotiations and acquiring the right valuations for our business. Their due diligence, valuations, legal documentation and strategic advice has helped us to catapult our growth.
+              </p>
+              <div class=" sm:flex sm:items-center sm:gap-3">
+                <p class="pl-2 mt-4 font-semibold">
+                  Mayank Vora<br>
+                  <span class="text-sm font-normal">Founder & Director, Vitruvian Technologies</span>
+                </p>
+                <div class="gap-1 flex p-2">
+                  <img src="star.svg" class=" sm:h-6"><img src="star.svg" class=" sm:h-6"><img src="star.svg" class=" sm:h-6"><img src="star.svg" class=" sm:h-6"><img src="star.svg" class=" sm:h-6">
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg min-h-96 sm:min-w-[48%] min-w-full shadow-lg p-4">
+              <div class="flex justify-between">
+                <img src="Ellipse 45.svg" class="h-6 mt-2">
+                <img src="Ellipse 42.svg" class="h-6">
+              </div>
+              <p class="p-2">
+               222 We are very happy with our association with IBS. They have been a part of our journey right from our earlier nascent stages as a young IT start up. Besides streamlining our processes, they helped us immensely with negotiations and acquiring the right valuations for our business. Their due diligence, valuations, legal documentation and strategic advice has helped us to catapult our growth.
+              </p>
+              <div class=" sm:flex sm:items-center sm:gap-3">
+                <p class="pl-2 mt-4 font-semibold">
+                  Mayank Vora<br>
+                  <span class="text-sm font-normal">Founder & Director, Vitruvian Technologies</span>
+                </p>
+                <div class="gap-1 flex p-2 ">
+                  <img src="star.svg" class=" sm:h-6"><img src="star.svg" class=" sm:h-6"><img src="star.svg" class=" sm:h-6"><img src="star.svg" class=" sm:h-6"><img src="star.svg" class=" sm:h-6">
+                </div>
+              </div>
+            </div>
+            
+             <!-- Card 3 -->
+            <div class="bg-white rounded-lg min-h-96 sm:min-w-[48%] min-w-full shadow-lg p-4">
+              <div class="flex justify-between">
+                <img src="Ellipse 45.svg" class="h-6 mt-2">
+                <img src="Ellipse 42.svg" class="h-6">
+              </div>
+              <p class="p-2">
+               333 We are very happy with our association with IBS. They have been a part of our journey right from our earlier nascent stages as a young IT start up. Besides streamlining our processes, they helped us immensely with negotiations and acquiring the right valuations for our business. Their due diligence, valuations, legal documentation and strategic advice has helped us to catapult our growth.
+              </p>
+              <div class=" sm:flex sm:items-center sm:gap-3">
+                <p class="pl-2 mt-4 font-semibold">
+                  Mayank Vora<br>
+                  <span class="text-sm font-normal">Founder & Director, Vitruvian Technologies</span>
+                </p>
+                <div class="gap-1 flex p-2">
+                  <img src="star.svg" class=" sm:h-6"><img src="star.svg" class=" sm:h-6"><img src="star.svg" class=" sm:h-6"><img src="star.svg" class=" sm:h-6"><img src="star.svg" class=" sm:h-6">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="arrow-back-regular-24.png" class="arrow2 right2 rotate-180 w-8 h-8">
+      </div>
+    </div>
+
+    <!-- frequently asked questions  -->
+    <div class=" flex flex-col justify-center items-center gap-5">
+      <div class="flex flex-row gap-2 items-center w-full justify-center text-xl">
+        <div class="w-12 h-2 rounded-lg bg-red-500"></div>
+       <div class="w-4 h-2 rounded-lg bg-blue-500"></div>
+       <span class="text-blue-500 font-semibold">Frequently asked questions</span>
+      </div>
+      <!-- box1 -->
+     <div  id="box" class="  bg-white shadow-xl rounded-md border-2 ">
+       <div class=" flex p-4 pt-1 pb-0 justify-between w-full ">
+        <div class="flex flex-row w-full gap-2 items-center" >
+          <img src="Path 88.svg" >
+          <p class=" font-semibold">Why outsource CFO Services?</p>
+        </div>
+         <img src="Group 406@2x.png" class="h-8 ">
+       </div>
+       <div>
+         <p class="pl-2">With growing businesses or small businesses, it is a more affordable option to outsource CFO services 
+         than hire a traditional CFO. Organisations face many challenges on a daily basis with respect to financial
+          accounting, compliances, growth and management. Having a CFO provider/Virtual CFO can help in curbing those
+           challenges as they take on the responsibility of managing activities like financial reporting, record 
+           keeping and maintenances, handling financial risks and more. You would benefit from hiring a Virtual 
+           CFO/outsourcing your CFO services if: -Your company is growing fast, or you're anticipating rapid growth
+            in the near future -You need stronger insights when it comes to your company's financial performance 
+            -You're experiencing cash flow management challenges -You're looking to buy a company, to raise money,
+             or to sell off a portion of your company
+         </p>
+       </div>
+     </div>
+          <!-- box2 -->
+          <div  id="box" class="  bg-white shadow-xl rounded-md border-2 ">
+            <div class=" flex p-4 pt-1 pb-0 justify-between items-center w-full ">
+             <div class="flex flex-row w-full gap-2 items-center" >
+               <img src="Path 88.svg" >
+               <p class=" font-semibold">Why outsource CFO Services?</p>
+             </div>
+              <img src="Group 406@2x.png" class="h-8 ">
+            </div>
+            <div>
+              <p class="pl-2">
+              </p>
+            </div>
+          </div>
+          <!-- box3 -->
+          <div  id="box" class="  bg-white shadow-xl rounded-md border-2 ">
+            <div class=" flex p-4 pt-1 pb-0 justify-between w-full ">
+             <div class="flex flex-row w-full gap-2 items-center" >
+               <img src="Path 88.svg" >
+               <p class=" font-semibold">Why outsource CFO Services?</p>
+             </div>
+              <img src="Group 406@2x.png" class="h-8 ">
+          </div>
+          <div>
+            <p class="pl-2">
+            </p>
+          </div>
+        </div>
+        <!-- box4 -->
+        <div  id="box" class="  bg-white shadow-xl rounded-md border-2 ">
+          <div class=" flex p-4 pt-1 pb-0 justify-between w-full ">
+           <div class="flex flex-row w-full gap-2 items-center" >
+             <img src="Path 88.svg" >
+             <p class=" font-semibold">Why outsource CFO Services?</p>
+           </div>
+            <img src="Group 406@2x.png" class="h-8 ">
+          </div>
+          <div>
+            <p class="pl-2">
+            </p>
+          </div>
+        </div>
+        <!-- box5 -->
+        <div  id="box" class="  bg-white shadow-xl rounded-md border-2 ">
+          <div class=" flex p-4 pt-1 pb-0 justify-between w-full ">
+           <div class="flex flex-row w-full gap-2 items-center" >
+             <img src="Path 88.svg" >
+             <p class=" font-semibold">Why outsource CFO Services?</p>
+           </div>
+            <img src="Group 406@2x.png" class="h-8 ">
+          </div>
+        <div>
+          <p class="pl-2">
+          </p>
+        </div>
+      </div>
+      <!-- box6 -->
+      <div  id="box" class="  bg-white shadow-xl rounded-md border-2 ">
+        <div class=" flex p-4 pt-1 pb-0 justify-between w-full ">
+         <div class="flex flex-row w-full gap-2 items-center" >
+           <img src="Path 88.svg" >
+           <p class=" font-semibold">Why outsource CFO Services?</p>
+         </div>
+          <img src="Group 406@2x.png" class="h-8 ">
+        </div>
+        <div>
+          <p class="pl-2">
+          </p>
+        </div>
+      </div>
+      <!-- box7 -->
+      <div  id="box" class="  bg-white shadow-xl rounded-md border-2 ">
+        <div class=" flex p-4 pt-1 pb-0 justify-between w-full ">
+         <div class="flex flex-row w-full gap-2 items-center" >
+           <img src="Path 88.svg" >
+           <p class=" font-semibold">Why outsource CFO Services?</p>
+         </div>
+          <img src="Group 406@2x.png" class="h-8 ">
+        </div>
+        <div>
+          <p class="pl-2">
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  
+</section>
+<!-- footer section -->
+<footer>
+    <!-- image conttainer -->
+     <div id="footerimg" class="footerimg flex flex-col justify-center items-center ">
+      <p class=" text-3xl p-6">
+        Think a virtual <span class=" text-blue-500">CFO </span>  can help you grow? <span class=" text-blue-500 justify-center">Book a free consultation </span> with one of our <span class=" text-blue-500">CFOs</span> <br> to learn more!
+      </p>
+      <button class=" bg-red-600 rounded-md  mb-12 p-2 text-white hover:bg-red-400 hover:border-2 hover:border-red-500 ">
+        Book a free consultation
+      </button>
+     </div>
+     <div class=" min-h-24 bg-black  text-white text-center text-sm">
+      <p class=" opacity-70 pt-4">
+        Copyright © 2023 IBS <br> Singapore: 77 High Street, #9-14 High Street Plaza Singapore 179433. <br> India: 202, Town center 1, Opp. Times Square, Andheri-Kurla Road, Marol, Andheri (E), Mumbai: 400059, India
+      </p>
+      </div>
+</footer>
+
+<script src="script.js"></script>  
+</body>
+
+</html>

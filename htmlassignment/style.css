@@ -1,0 +1,101 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline:none;
+    scroll-behavior: smooth;
+    font-size: 'Poppins',sans-serif;
+    
+}
+body{
+  overflow-x: hidden;
+}
+
+#custom-bg {
+  background-image: url('./Group 399@2x.png');
+  background-size: cover;
+  height: fit-content;
+  width: fit-content;
+  background-position: center;
+}
+#featureSection {
+  background-image: url('./pngwing.com (21)@2x.png');
+  background-size: contain;
+  background-position: bottom;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.arrow {
+  height: 50px;
+  cursor: pointer;
+}
+.right{
+  transform: rotate(180deg);
+}
+.frame{
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+}
+.slider{
+  display: flex;
+  transition: all 0.5s ease;
+}
+.slider img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#box{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  min-height: 60px;
+  max-height: fit-content;
+  justify-items: center;
+  align-items: center;
+  transform: translateX();
+  transition: transform 0.3s ease; 
+}
+#box:hover {
+  transform: translateX(-8%);
+}
+
+.footerimg {
+  background-image: url('Group 399@2x.png');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  min-height: max-content;
+}
+
+
+@media (max-width: 640px) {
+    #responseDiv {
+      display: flex;
+      flex-direction: column;
+    }
+    #FormTag{
+        margin-top: 142%;
+    }
+    #whatsappGetStarted{
+            display: none;
+    }
+    #servicesection{
+        margin-top: 150%;
+    }
+    #box{
+      min-height: 80px;
+    }
+
+
+     
+  }
