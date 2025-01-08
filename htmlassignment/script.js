@@ -4,13 +4,15 @@ const right = document.querySelector('.right')
 const slider = document.querySelector('.slider')
 let slideNumber = 1;
 let length = 5;
+const screenSize1 = window.innerWidth
+const slideWidth1 = screenSize1 <639 ? 340 : 180 ;
 
 const nextSlide =()=>{
-    slider.style.transform = `translateX(-${slideNumber * 180}px)`;
+    slider.style.transform = `translateX(-${slideNumber * slideWidth1 }px)`;
     slideNumber++;
 }
 const prevSlide =()=>{
-    slider.style.transform = `translateX(-${(slideNumber-2) * 180}px)`;
+    slider.style.transform = `translateX(-${(slideNumber-2) * slideWidth1}px)`;
     slideNumber--;
 }
 const getFirstSlide =()=>{
@@ -18,7 +20,7 @@ const getFirstSlide =()=>{
     slideNumber = 1;
 }
 const getLastSlide =()=>{
-    slider.style.transform = `translateX(-${(length - 1)*180}px)`;
+    slider.style.transform = `translateX(-${(length - 1)*slideWidth1}px)`;
     slideNumber = 1;
 }
 
